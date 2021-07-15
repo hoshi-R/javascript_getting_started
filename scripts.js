@@ -20,9 +20,9 @@
   console.log(obj.A);   //ドット演算子
   console.log(obj["A"]);    //ブラケット構文
 
-  //関数リテラル
-
-
-
+// 少数
+  console.log(0.2 * 3);
+  console.log(0.2 * 3 == 0.6);
+  console.log((0.2 * 10) * 3 == 0.6 * 10);
 
 })();
