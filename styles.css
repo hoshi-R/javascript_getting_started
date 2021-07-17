@@ -7,7 +7,7 @@
 
 .canvas {
   width: 500px;
-  height: 500px;
+  height: 1500px;
   border: 1px solid #333
   ;
 }
@@ -23,4 +23,8 @@
   width: 100px;
   height: 100px;
   background-color: #666;
+}
+
+.hikouki {
+  color: red;
 }

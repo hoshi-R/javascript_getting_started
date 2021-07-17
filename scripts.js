@@ -25,4 +25,8 @@
   console.log(0.2 * 3 == 0.6);
   console.log((0.2 * 10) * 3 == 0.6 * 10);
 
+  function btn_click() {
+    window.alert("ボタンですけど何か？")
+  }
+
 })();
