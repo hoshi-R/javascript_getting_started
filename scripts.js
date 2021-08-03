@@ -126,5 +126,28 @@
 
   */
 
+  //Chapter4
+
+  /* 
+  関数名をつける際の注意点
+  ・(単なる文字列ではなく)識別子の条件を満たす必要がある
+  ・「その関数がどのような処理を担っているのか」がすぐわかるような名前を付ける
+  　→「showMessage」のように「動詞+名詞」の型式で命名するのが一般的（camelCase記法）
+  */
+
+  //function命令で定義
+  function getTriangle(base, height) {
+    return base * height / 2;
+  }
+  console.log(getTriangle(5, 2));
+
+  //関数リテラル表現で定義
+  let getTriangleThree = function(base, height) {
+    return base * height / 2;
+  };
+  console.log("sankaku" + getTriangleThree(10, 20));
+
+  let getTriangleTwo = (base, height) => base * height / 2;
+  console.log("三角形の面積：" + getTriangleTwo(50, 20));
 
 })();
