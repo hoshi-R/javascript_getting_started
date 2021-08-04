@@ -150,4 +150,23 @@
   let getTriangleTwo = (base, height) => base * height / 2;
   console.log("三角形の面積：" + getTriangleTwo(50, 20));
 
+  //Chapter5
+
+  class Member {
+    //コンストラクターの定義
+    constructor(firstName, lastName) {
+    //プロパティの定義
+      this.firstName = firstName;
+      this.lastName = lastName;
+    }
+
+    //メソッドの定義
+    getName() {
+      return this.lastName + this.firstName;
+    }
+  }
+
+  let m = new Member("太郎", "山田");
+  console.log(m.getName());
+
 })();
