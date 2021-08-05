@@ -169,4 +169,12 @@
   let m = new Member("太郎", "山田");
   console.log(m.getName());
 
+  //Chapter6
+  let current = new Date();
+  let result = document.getElementById("result");
+  result.textContent = current.toLocaleString();
+
+  let nam = document.getElementsByName("time");
+  nam[0].value = current.toLocaleTimeString();
+
 })();
