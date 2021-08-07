@@ -177,4 +177,38 @@
   let nam = document.getElementsByName("time");
   nam[0].value = current.toLocaleTimeString();
 
+  document.getElementById("btn").addEventListener("click", () => {
+    let result = [];
+    let numbers = document.getElementsByName("number");
+
+    for(let i = 0, len = numbers.length; i < len; i++) {
+      let number = numbers.item(i);
+      if (number.checked) {
+        result.push(number.value);
+      } else {
+        console.log(number.value);
+      }
+    }
+    window.alert(result.toString());
+  });
+
+  let elem = document.getElementById('elem');
+
+  elem.addEventListener("mouseover", function() {
+    this.className = "highlight";
+  }, false);
+
+  elem.addEventListener("mouseout", function() {
+    this.className = "";
+  }, false);
+
+  elem.addEventListener("mouseover", function() {
+    this.style.color = "red";
+  }, false);
+
+  elem.addEventListener("mouseout", function() {
+    this.style.color = "#333";
+  }, false);
+
+
 })();
