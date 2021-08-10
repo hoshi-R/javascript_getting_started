@@ -109,6 +109,8 @@
     hogehoge6.innerHTML = hoge6 + "&nbsp";
   }
 
+
+
   //Chapter3
 
   /*
@@ -125,6 +127,8 @@
   オブジェクト名.メソッド名([引数 [,...]]);
 
   */
+
+
 
   //Chapter4
 
@@ -150,6 +154,8 @@
   let getTriangleTwo = (base, height) => base * height / 2;
   console.log("三角形の面積：" + getTriangleTwo(50, 20));
 
+
+
   //Chapter5
 
   class Member {
@@ -168,6 +174,8 @@
 
   let m = new Member("太郎", "山田");
   console.log(m.getName());
+
+
 
   //Chapter6
   let current = new Date();
@@ -210,6 +218,8 @@
     this.style.color = "#333";
   }, false);
 
-  
+
+
+  //Chapter7
 
 })();
