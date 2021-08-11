@@ -222,4 +222,16 @@
 
   //Chapter7
 
+  let count = 0;
+  let result_1 = document.getElementById('result_1');
+  document.getElementById('btn_1').addEventListener('clicl', () => {
+    result_1.textContent = ++count;
+    history.pushState(count, null, '/js/chap07/count/' + count);
+  });
+
+  window.addEventListener('popstate', (e) => {
+    count = e.state;
+    result_1.textContent = count;
+  });
+
 })();
